@@ -1,87 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./src/css/main.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<title>Frontend Mentor | [Challenge Name Here]</title>
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+	<header>
+		<nav class="navbar">
+			<div class="navbar__title">
+				<h1 class="navbar__title__logo">
+					Social Media Dashboard
+				</h1>
+				
+				<h3>
+					Total Followers: 23,004
+				</h3>
+			</div>
 
-  Dark Mode
+			<div class="navbar__theme">
+				<h2>Dark Mode</h2>
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</nav>
+	</header>
 
-  
+	<main>
+		<section class="cards">
+			<div class="cards__card">
+				<div class="cards__card__header">
+					<span class="cards__card__header__icon"></span>
+					<h1 class="cards__card__header__profile">@nathanf</h1>
+				</div>
+				
+				<div class="card__count">
+					<h1 class="cards__card__count__number">1987</h1>
+					<h2 class="cards__card__count__unit">Followers</h2>
+					<h3 class="cards__card__count__difference">▲ 12 Today</h3>
+				</div>
+			</div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+			<div class="cards__card">
+				<div class="cards__card__header">
+					<span class="cards__card__header__icon"></span>
+					<h1 class="cards__card__header__profile">@nathanf</h1>
+				</div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+				<div class="card__count">
+					<h1 class="cards__card__count__number">1044</h1>
+					<h2 class="cards__card__count__unit">Followers</h2>
+					<h3 class="cards__card__count__difference">▲ 99 Today</h3>
+				</div>
+			</div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+			<div class="cards__card">
+				<div class="cards__card__header">
+					<span class="cards__card__header__icon"></span>
+					<h1 class="cards__card__header__profile">@realnathanf</h1>
+				</div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+				<div class="card__count">
+					<h1 class="cards__card__count__number">11k</h1>
+					<h2 class="cards__card__count__unit">Followers</h2>
+					<h3 class="cards__card__count__difference">▲ 1099 Today</h3>
+				</div>
+			</div>
 
+			<div class="cards__card">
+				<div class="cards__card__header">
+					<span class="cards__card__header__icon"></span>
+					<h1 class="cards__card__header__profile">Nathan F.</h1>
+				</div>
 
+				<div class="card__count">
+					<h1 class="cards__card__count__number">8239</h1>
+					<h2 class="cards__card__count__unit">Subscribers</h2>
+					<h3 class="cards__card__count__difference">▼ 144 Today</h3>
+				</div>
+			</div>
+		</section>
 
-  Overview - Today
+		<section class="overview">
+			<h1 class="overview__title">Overview - Today</h1>
 
-  Page Views
-  87
-  3%
+			
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Page Views</h3>
+					<p class="overview__card__numbers__count">87</p>
+				</div>
+				
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
+						
+					</span>
+					<p class="overview__card__change__change">
+						▲ 3%
+					</p>
+				</div>
+			</div>
+			
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Likes</h3>
+					<p class="overview__card__numbers__count">52</p>
+				</div>
 
-  Likes
-  52
-  2%
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
 
-  Likes
-  5462
-  2257%
+					</span>
+					<p class="overview__card__change__change">
+						▼ 2%
+					</p>
+				</div>
+			</div>
 
-  Profile Views
-  52k
-  1375%
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Likes</h3>
+					<p class="overview__card__numbers__count">5462</p>
+				</div>
+				
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
 
-  Retweets
-  117
-  303%
+					</span>
+					<p class="overview__card__change__change">
+						▲ 2257%
+					</p>
+				</div>
+			</div>
 
-  Likes
-  507
-  553%
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Profile Views</h3>
+					<p class="overview__card__numbers__count">52k</p>
+				</div>
 
-  Likes
-  107
-  19%
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+					</span>
+					<p class="overview__card__change__change">
+						▲ 1375%
+					</p>
+				</div>
+			</div>
+
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Retweets </h3>
+					<p class="overview__card__numbers__count">117</p>
+				</div>
+
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
+
+					</span>
+					<p class="overview__card__change__change">
+						▲ 303%
+					</p>
+				</div>
+			</div>
+
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Likes</h3>
+					<p class="overview__card__numbers__count">507</p>
+				</div>
+
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
+
+					</span>
+					<p class="overview__card__change__change">
+						▲ 553%
+					</p>
+				</div>
+			</div>
+
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Likes</h3>
+					<p class="overview__card__numbers__count">107</p>
+				</div>
+
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
+
+					</span>
+					<p class="overview__card__change__change">
+						▼ 19%
+					</p>
+				</div>
+			</div>
+
+			<div class="overview__card">
+				<div class="overview__card__numbers">
+					<h3 class="overview__card__numbers__units">Total Views</h3>
+					<p class="overview__card__numbers__count">1407</p>
+				</div>
+
+				<div class="overview__card__change">
+					<span class="overview__card__change__icon">
+
+					</span>
+					<p class="overview__card__change__change">
+						▼ 12%
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	
 </body>
 </html>

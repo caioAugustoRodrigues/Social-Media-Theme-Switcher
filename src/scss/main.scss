@@ -1,0 +1,19 @@
+@import 'resets';
+@import 'config';
+@import 'components';
+
+html {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        background: $white;
+        color: $lt__gr-blue--dk;
+    }
+}
+
+a{
+    color: $lt__gr-blue--dk;
+    text-decoration: none;
+}
+
+

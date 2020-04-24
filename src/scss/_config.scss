@@ -1,0 +1,62 @@
+//Primary
+$primary--green: hsl(163, 72%, 41%);
+$primary--red: hsl(356, 69%, 56%);
+
+//Social
+$social--fb: hsl(195, 100%, 50%);
+$social--twitter: hsl(203, 89%, 53%);
+$social--instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+$social--yt: hsl(348, 97%, 39%);
+
+//Togglers
+$toggle--dk: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+$toggle--lt: hsl(230, 22%, 74%);
+
+$white: hsl(0, 0%, 100%); //Text, BG on light theme
+
+//Dark Theme
+$dk__dk-blue--bg: hsl(230, 17%, 14%); //Background
+$dk__dk-blue--top-bg: hsl(232, 19%, 15%); //Top BG Pattern
+$dk__dk-desat-blue: hsl(228, 28%, 20%); //Card BG
+$dk__desat-blue: hsl(228, 34%, 66%); //Text
+
+//Light Theme
+$lt__lt-blue: hsl(225, 100%, 98%); //Top BG Pattern
+$lt__gr-blue--lt: hsl(227, 47%, 96%); //Card BG
+$lt__gr-blue--dk: hsl(228, 12%, 44%); //Text
+$lt__dk-blue: hsl(230, 17%, 14%); //Text
+
+
+$serif: 'DM Serif Display', serif;
+$sans-serif: 'Karla', sans-serif;
+
+$font-weight:(
+    "medium": 400,
+    "bold": 700,
+);
+
+@function weight($weightname){
+    @return map-get($font-weight, $weightname );
+};
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content; 
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1046px) {
+        @content; 
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content; 
+    }
+}
