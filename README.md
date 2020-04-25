@@ -1,5 +1,7 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
+Hosted at: https://caioaugustorodrigues.github.io/Social-Media-Theme-Switcher/
+
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
