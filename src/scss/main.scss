@@ -8,12 +8,18 @@ html {
         font-size: 14px;
         background: $white;
         color: $lt__gr-blue--dk;
+        @include transition-ease;
     }
 }
 
 a{
     color: $lt__gr-blue--dk;
     text-decoration: none;
+}
+
+.dark {
+    background: $dk__dk-blue--bg;
+    color: $dk__desat-blue;
 }
 
 

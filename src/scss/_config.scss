@@ -9,7 +9,7 @@ $social--instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
 $social--yt: hsl(348, 97%, 39%);
 
 //Togglers
-$toggle--dk: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+$toggle--dk: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 $toggle--lt: hsl(230, 22%, 74%);
 
 $white: hsl(0, 0%, 100%); //Text, BG on light theme

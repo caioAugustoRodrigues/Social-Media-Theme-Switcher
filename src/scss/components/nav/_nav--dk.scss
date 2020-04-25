@@ -1,0 +1,11 @@
+.dark {
+    header {
+        .navbar {
+            &__title {
+                &__logo {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
