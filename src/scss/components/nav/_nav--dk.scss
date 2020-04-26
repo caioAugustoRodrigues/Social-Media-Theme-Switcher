@@ -2,6 +2,8 @@
     header {
         .navbar {
             &__title {
+                border-bottom: 1px solid $dk__desat-blue;
+
                 &__logo {
                     color: $white;
                 }

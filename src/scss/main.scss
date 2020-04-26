@@ -1,25 +1,31 @@
 @import 'resets';
 @import 'config';
-@import 'components';
+@import './components';
 
 html {
+    overflow-x: hidden;
+
+    #light {
+       @include theme-light;
+    }
+
+    #dark {
+        @include theme-dark;
+    }
+
     body {
+        overflow-x: hidden;
         font-family: 'Inter', sans-serif;
         font-size: 14px;
-        background: $white;
-        color: $lt__gr-blue--dk;
+        background: var(--bg-main);
+        color: var(--text--lt);
         @include transition-ease;
     }
 }
 
 a{
-    color: $lt__gr-blue--dk;
+    color: var(--text--lt);
     text-decoration: none;
-}
-
-.dark {
-    background: $dk__dk-blue--bg;
-    color: $dk__desat-blue;
 }
 
 

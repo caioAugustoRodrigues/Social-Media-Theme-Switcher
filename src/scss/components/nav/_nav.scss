@@ -1,25 +1,22 @@
-@import './nav--dk';
-
 header {
     width: 100vw;
     overflow-x: hidden;
 
     .navbar {
-        margin: 1.5rem 1rem;
         display: flex;
         flex-wrap: wrap;
+        padding: 2rem 2rem 1rem 1rem;
 
         &__title {
             flex: 1 1 100%;
-            padding-bottom: 1.2rem;
-            border-bottom: 1px solid $lt__gr-blue--dk;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--text--lt);
             line-height: 1.75rem;
 
             &__logo {
                 font-size: 1.5rem;
-                color: $lt__dk-blue;
+                color: var(--text--dk);
                 font-weight: weight(bold);
-                letter-spacing: -1px;
                 @include transition-ease;
             }
 
@@ -61,14 +58,14 @@ header {
                     height: 1.2rem;
                     width: 1.2rem;
                     border-radius: 50%;
-                    background: $white;
+                    background: var(--bg-main);
                     @include transition-ease;
                 }
             }
             
             .on {
                 @extend .switch;
-                background-image: $toggle--dk;
+                background: $toggle--dk;
 
                 .slider {
                     transform: translateX(125%);

@@ -7,11 +7,11 @@ function getTheme() {
     if (!light) {
         light = true;
         toggler.classList.remove('on');
-        body.classList.remove('dark');
+        body.setAttribute('id', 'light');
     } else {
         light = false;
         toggler.classList.add('on');
-        body.classList.add('dark');
+        body.setAttribute('id', 'dark');
     }
 }
 

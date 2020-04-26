@@ -12,21 +12,6 @@ $social--yt: hsl(348, 97%, 39%);
 $toggle--dk: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 $toggle--lt: hsl(230, 22%, 74%);
 
-$white: hsl(0, 0%, 100%); //Text, BG on light theme
-
-//Dark Theme
-$dk__dk-blue--bg: hsl(230, 17%, 14%); //Background
-$dk__dk-blue--top-bg: hsl(232, 19%, 15%); //Top BG Pattern
-$dk__dk-desat-blue: hsl(228, 28%, 20%); //Card BG
-$dk__desat-blue: hsl(228, 34%, 66%); //Text
-
-//Light Theme
-$lt__lt-blue: hsl(225, 100%, 98%); //Top BG Pattern
-$lt__gr-blue--lt: hsl(227, 47%, 96%); //Card BG
-$lt__gr-blue--dk: hsl(228, 12%, 44%); //Text
-$lt__dk-blue: hsl(230, 17%, 14%); //Text
-
-
 $serif: 'DM Serif Display', serif;
 $sans-serif: 'Karla', sans-serif;
 
@@ -35,12 +20,30 @@ $font-weight:(
     "bold": 700,
 );
 
+//General
+@mixin theme-light {
+    --bg-top: hsl(225, 100%, 98%); //Top BG Pattern
+    --bg-main: hsl(0, 0%, 100%); //BG main
+    --card-bg: hsl(227, 47%, 96%); //Card BG
+    --text--lt: hsl(228, 12%, 44%); //Text
+    --text--dk: hsl(230, 17%, 14%); //Text*/
+};
+
+@mixin theme-dark {
+    --bg-top: hsl(232, 19%, 15%); //Top BG Pattern
+    --bg-main: hsl(230, 17%, 14%); //BG main
+    --card-bg: hsl(228, 28%, 20%); //Card BG
+    --text--lt: hsl(228, 34%, 66%); //Text
+    --text--dk: hsl(0, 0%, 100%); //Text
+}
+
+
 @function weight($weightname){
     @return map-get($font-weight, $weightname );
 };
 
 @mixin transition-ease {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 @mixin media-md {
