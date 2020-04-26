@@ -41,21 +41,13 @@
 
             &__unit {
                 text-transform: uppercase;
-                letter-spacing: 2px;
+                letter-spacing: 3px;
             }
 
             &__difference {
                 margin: 1.5rem;
                 font-weight: weight(bold);
             }    
-        }
-
-        .positive {
-            color: $primary--green;
-        }
-
-        .negative {
-            color: $primary--red;
         }
     }
 

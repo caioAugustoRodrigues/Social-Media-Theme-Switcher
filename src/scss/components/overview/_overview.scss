@@ -1,0 +1,44 @@
+.overview {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__title {
+        font-weight: weight(bold);
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: .5rem 0;
+        background: var(--card-bg);
+        font-weight: weight(bold);
+        border-radius: .3rem;
+
+        &__numbers {
+            margin: .5rem 0;
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__units {
+                color: var(--text--lt);
+            }
+        }
+
+        &__change {
+            @extend .overview__card__numbers;
+            align-items: flex-end;
+
+            &__count {
+                color: var(--text--dk);
+                font-size: 2rem;
+            }
+        }
+    }
+}
