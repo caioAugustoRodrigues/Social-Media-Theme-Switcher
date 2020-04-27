@@ -1,0 +1,28 @@
+@include media-md {
+    .overview {
+        padding: 5rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__title {
+            grid-column: span 2;
+        }
+
+        &__card {
+            padding: 1rem 2rem;
+            margin: 0;
+        }
+    }
+}
+
+@include media-lg {
+    .overview {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        &__title {
+            grid-column: span 4;
+        }
+    }
+}

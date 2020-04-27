@@ -12,9 +12,34 @@ html {
     #dark {
         @include theme-dark;
 
+        .cards {
+            &__card {
+                &:hover {
+                    background: darken($toggle--lt, 40%);
+                }
+            }
+
+            .instagram {
+                &:hover {
+                    background: darken($toggle--lt, 40%);
+                    $border: .3rem;
+                    background-clip: padding-box;
+                    border-top: solid $border transparent;
+                    border-radius: .3rem;
+                    @include transition-ease;
+                }
+            }
+        }
+
         .overview {
             &__title {
                 color: var(--text--dk);
+            }
+
+            &__card {
+                &:hover {
+                    background: darken($toggle--lt, 40%);
+                }
             }
         }
     }
@@ -26,6 +51,20 @@ html {
         background: var(--bg-main);
         color: var(--text--lt);
         @include transition-ease;
+
+        .bg-top {
+            display: block;
+            height: 45vh;
+            width: 100%;
+            background: var(--bg-top);
+            position: absolute;
+            z-index: -1;
+            @include transition-ease;
+
+            @include media-md {
+                height: 25vh;
+            }
+        }
     }
 }
 

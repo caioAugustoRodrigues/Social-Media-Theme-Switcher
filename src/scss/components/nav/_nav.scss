@@ -1,5 +1,4 @@
 header {
-    width: 100vw;
     overflow-x: hidden;
 
     .navbar {
@@ -27,9 +26,9 @@ header {
 
         &__theme {
             padding: 1rem 0;
+            width: 100%;
             display: flex;
             align-items: center;
-            width: 100vw;
             height: fit-content;
 
             h2 {
@@ -74,3 +73,5 @@ header {
         }
     }
 }
+
+@import './responsive';

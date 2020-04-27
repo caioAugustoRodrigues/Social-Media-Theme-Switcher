@@ -1,0 +1,27 @@
+@include media-md {
+    .cards {
+        padding: 1rem 5rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__card {
+            margin: 0;
+        }
+    }
+}
+
+@include media-lg {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+@include media-xl {
+    .cards {
+        &__card {
+            padding: 2rem 3rem;
+        }
+    }
+}

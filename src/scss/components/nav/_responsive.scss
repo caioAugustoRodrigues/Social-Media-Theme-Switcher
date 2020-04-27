@@ -1,0 +1,26 @@
+@include media-md {
+    header {
+        .navbar {
+            padding: 3rem 5rem;
+
+            &__title {
+                flex: 1;
+                border: none;
+            }
+
+            &__theme {
+                flex: 1;
+                justify-content: flex-end;
+
+                h2 {
+                    color: $toggle--lt;
+                }
+                
+                .switch {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+

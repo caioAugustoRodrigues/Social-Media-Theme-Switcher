@@ -18,6 +18,10 @@
         position: relative;
         @include transition-ease;
 
+        &:hover {
+            background: lighten($toggle--lt, 15%);
+        }
+
         &__header {
             margin: 1rem 0;
             min-height: fit-content;
@@ -65,6 +69,7 @@
         background-clip: padding-box;
         border-top: solid $border transparent;
         border-radius: .3rem;
+        @include transition-ease;
 
         &:before {
             content: '';
@@ -75,9 +80,20 @@
             border-radius: inherit;
             background: $social--instagram;
         }
+
+        &:hover {
+            background: lighten($toggle--lt, 15%);
+            $border: .3rem;
+            background-clip: padding-box;
+            border-top: solid $border transparent;
+            border-radius: .3rem;
+            @include transition-ease;
+        }
     }
 
     .youtube {
         border-top: .3rem solid $social--yt;
     }
 }
+
+@import './responsive';
